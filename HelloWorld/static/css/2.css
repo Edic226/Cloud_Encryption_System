@@ -1,0 +1,160 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*更改默认值*/
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        /*添加背景图片*/
+        .main{
+            width: 100%;
+            height:100%;
+            background: linear-gradient(to left, #ffffff00, #ffcfcf);
+
+        }
+        /*让输入框居中*/
+        .loginFrame{
+            width: 700px;
+            height: 470px;
+            background: rgb(39 14 78 / 30%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            /*添加边框圆角*/
+            border-radius: 10px;
+
+            /*添加边距挤下去*/
+            padding: 25px 0;
+            box-sizing: border-box;
+            /*添加阴影*/
+            box-shadow: inset 0 0 0px 10px rgb(169 149 174 / 50%);
+        }
+        /*改变盒子下方的输入框位置*/
+        .loginFrame > form > div{
+            width: 350px;
+            height: 50px;
+            margin: 40px auto;
+            /*改变字体颜色*/
+            color: white;
+        }
+
+        /*改变标题居中, 并且改颜色*/
+        .loginFrame  > p{
+            text-align: center;
+            color: rgb(39 14 78 / 76%);
+            font-family: "微软雅黑";
+            font-size: 50px;
+        }
+
+        /*改变输入框文字*/
+        .loginFrame >form > div >span{
+            display: inline-block;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .loginFrame > form > p{
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+
+        /*改变输入框样式*/
+        div.user input, div.password_1  input{
+            width: 100%;
+            height: 30px;
+            /*透明色*/
+            background: #6a3b961a;
+            /*清除默认边框*/
+            border: none;
+            /*添加底部边框*/
+            border-bottom: 1px solid #6b6689;
+            /*清除蓝色点击框*/
+            outline: none;
+            /*改变文字颜色*/
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        div.password_2 input{
+            width: 100%;
+            height: 30px;
+            /*透明色*/
+            background: #6a3b961a;
+            /*清除默认边框*/
+            border: none;
+            /*添加底部边框*/
+            border-bottom: 1px solid #6b6689;
+            /*清除蓝色点击框*/
+            outline: none ;
+            /*改变文字颜色*/
+            color: white;
+            border-radius: 5px;
+        }
+
+        /*改变点击登录按钮样式*/
+        .loginFrame >form >div.enterBut{
+            width: 200px;
+            height: 50px;
+            /*添加圆角*/
+            border-radius: 50px;
+            /*设置背景颜色  渐变*/
+            background: transparent;
+            padding-top: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transform:translateX(-60%);
+        }
+
+        /*给登录按钮添加 鼠标放上效果 */
+        .loginFrame >form >div.enterBut:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+        }
+
+        .loginFrame >form >div.enterBut2{
+            width: 200px;
+            height: 50px;
+            /*添加圆角*/
+            border-radius: 50px;
+            /*设置背景颜色  渐变*/
+            background: transparent;
+            padding-top: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transform:translate(70%,-185%);
+        }
+
+        /*给登录按钮添加 鼠标放上效果 */
+        .loginFrame >form >div.enterBut2:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+        }
+
+        /*给输入框提醒文字改变颜色*/
+        /*适配谷歌*/
+        input::-webkit-input-placeholder{
+            color: #BDCADA;
+        }
+
+        svg{
+            vertical-align: middle;
+        }
+        .func
+        {
+            width: 100%;
+            height: 30px;
+            /*透明色*/
+            background: #7c636300;
+            /*清除默认边框*/
+            border: none;
+            font-family: "微软雅黑";
+            font-size: 25px;
+            /*清除蓝色点击框*/
+            outline: none;
+            /*改变文字颜色*/
+            color:rgb(39 14 78 / 76%);
+            text-align: center;
+        }

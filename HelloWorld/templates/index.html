@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>我的云加密系统</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body class="body">
+    <div class="background">
+        <div class="log_pad">
+            <div class="b"><img src="{% static 'img/Thicket.jpg' %}" class="b"></div>
+            <div class="c">
+                <div class="d">
+                    <h1>信安20-1 赵博</h1>
+                    <h2>数据云密码服务系统</h2>
+                    <a href="/user/login" class="f">登录</a><br/>
+                    <a href="/user/register" class="g">注册</a><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% if messages %}
+    <script>
+        {% for msg in messages %}
+            alert('{{ msg.message }}')
+        {% endfor %}
+    </script>
+{% endif %}
+
+</body>
+</html>

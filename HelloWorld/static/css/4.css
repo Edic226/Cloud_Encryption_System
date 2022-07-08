@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: "微软雅黑"
+}
+.aaa{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101D;
+  padding: 6px 14px;
+
+  transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logo_content .logo{
+    color:white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+.logo_content .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
+.sidebar #btn{
+    color: white;
+    position: absolute;
+    left: 56%;
+    top:6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform:translateX(-50%) ;
+}
+.sidebar.active #btn{
+    left: 90%;
+}
+.sidebar.active #atn{
+    left: 90%;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    list-style: none;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin:0 5px;
+    line-height: 50px;
+    border-radius: 12px;
+}
+.sidebar ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+.sidebar ul li  .tooltip{
+    position: absolute;
+    height: 35px;
+    width: 122px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    left: 122px;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active ul li  .tooltip{
+    display: none;
+}
+.sidebar ul li:hover  .tooltip{
+    top:50%;
+    transition: all 0.5s ease;
+    opacity: 1;
+
+}
+.sidebar ul li a:hover{
+    background: white;
+    color: #11101D;
+    opacity: 1;
+}
+
+.sidebar ul li  i {
+    border-radius:12px ;
+    line-height: 50px;
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active  .links_name{
+    opacity: 1;
+    pointer-events:auto;
+}
+.home_content{
+    position: absolute;
+    height: 100%;
+    left: 78px;
+     width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    background: linear-gradient(to left,#fed5ff,#11101d);
+
+}
+.home_content .text{
+    font-size: 100px;
+    text-align:center;
+    font-weight: 500;
+    line-height:600px;
+    color: #ffffff;
+    margin-top: 12px;
+}
+.sidebar.active ~ .home_content{
+    width: calc(100% - 240px);
+    left: 240px;
+}
+.beauty{
+
+            width: 700px;
+            height: 450px;
+            background: rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto ;
+            /*添加边框圆角*/
+            border-radius: 10px;
+
+            /*添加边距挤下去*/
+            padding: 50px 0;
+            box-sizing: border-box;
+            /*添加阴影*/
+            box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+}
+ div.privatekey input, div.publickey input{
+            width: 100%;
+            height: 30px;
+            /*透明色*/
+            background: #00000021;
+            /*清除默认边框*/
+            border: none;
+            /*添加底部边框*/
+            /*border-bottom: 1px solid white;*/
+            /*清除蓝色点击框*/
+            outline: none ;
+            /*改变文字颜色*/
+            color: white;
+            border-radius: 5px;
+        }
+        .enterBut{
+            width: 200px;
+            height: 50px;
+            /*添加圆角*/
+            border-radius: 50px;
+            /*设置背景颜色  渐变*/
+            background-image: blue;
+            text-align: center;
+            padding-top: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+        }
+
+        /*给登录按钮添加 鼠标放上效果 */
+        .enterBut:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+        }
+
+        /*给输入框提醒文字改变颜色*/
+        /*适配谷歌*/
+        input::-webkit-input-placeholder{
+            color: #BDCADA;
+        }
+        .func
+        {
+            width: 100%;
+            height: 30px;
+            /*透明色*/
+            background: transparent;
+            /*清除默认边框*/
+            border: none;
+            font-size: 20px;
+            /*清除蓝色点击框*/
+            outline: none ;
+            /*改变文字颜色*/
+            color: white;
+
+        }
+.beauty  > div{
+            width: 350px;
+            height: 50px;
+            margin: 40px auto;
+            /*改变字体颜色*/
+            color: white;
+        }
+.beauty1 {
+
+    width: 700px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*添加边框圆角*/
+    border-radius: 10px;
+
+    /*添加边距挤下去*/
+    padding: 50px 0;
+    box-sizing: border-box;
+    /*添加阴影*/
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+.beauty1  > div{
+            width: 350px;
+            height: 50px;
+            margin: 40px auto;
+            /*改变字体颜色*/
+            color: white;
+        }
+.beauty2{
+      width: 700px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*添加边框圆角*/
+    border-radius: 10px;
+
+    /*添加边距挤下去*/
+    padding: 50px 0;
+    box-sizing: border-box;
+    /*添加阴影*/
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+.beauty2  > div{
+            width: 350px;
+            height: 50px;
+            margin: 40px auto;
+            /*改变字体颜色*/
+            color: white;
+        }

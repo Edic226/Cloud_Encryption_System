@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.background{
+    /* 设置背景渐变 */
+    background: linear-gradient(to left, #ffffff00, #ffcfcf);
+    display: flex;
+    justify-content: center;
+    height: 2000px;
+    width: 100%;
+    padding-top:0;
+}
+.log_pad{
+    position:relative;
+    top: 80px;
+    width: 1100px;
+    height: 550px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+    display: flex;
+}
+.b{
+    width: 850px;
+    height: 550px;
+    /* 让图片适应大小 */
+    background-size: cover;
+}
+img.b{
+    opacity: 0.75;
+}
+.c{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d{
+    width: 250px;
+    height: 500px;
+}
+.d h1{
+    font: 900 30px '微软雅黑';
+    text-align: center;
+    padding: 10px;
+}
+.d h2{
+    font: 900 25px '微软雅黑';
+    text-align: center;}
+.f{
+    position: absolute;
+    margin: 20px;
+    bottom: 200px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #b2e4ff,#ffdae8);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0;
+    color: white;
+}
+.f:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+}
+.g{
+    position: absolute;
+    margin: 20px;
+    bottom: 40px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #b2e4ff,#ffdae8);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0;
+    color: white;
+}
+.g:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+}

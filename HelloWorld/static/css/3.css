@@ -1,0 +1,79 @@
+.sss{
+            /* 设置背景渐变 */
+            background: url("../img/3.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            height: 2000px;
+            #width:2000px ;
+            padding-top:0;
+        }
+  .a{
+            position:relative;
+            top: 100px;
+            width: 1100px;
+            height: 550px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.8);
+            display: flex;
+        }
+        .b{
+            width: 1000px;
+            height: 550px;
+            background-image: url("../img/2.jpg");
+            /* 让图片适应大小 */
+            background-size: cover;
+        }
+        .c{
+            width: 300px;
+            height: 550px;
+            background-color: ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .d{
+            width: 250px;
+            height: 500px;
+        }
+        .d h1{
+            font: 900 30px '';
+            color:rgb(255,182,193);
+            font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+            text-align: center;
+        }
+        .d h2{
+            font: 900 25px '';
+            color:rgb(255,182,193);
+            font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+            text-align: center;}
+
+        .f{
+            position: absolute;
+            margin: 20px;
+            bottom: 200px;
+            display: block;
+            width: 200px;
+            height: 60px;
+            font: 900 30px '';
+            text-decoration: none;
+            font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+            line-height: 50px;
+            border-radius: 30px;
+            background-image: linear-gradient(to left, #00CED1,#DB7093);
+            text-align: center;
+        }
+         .g{
+            position: absolute;
+            margin: 20px;
+            bottom: 40px;
+            display: block;
+            width: 200px;
+            height: 60px;
+            font: 900 30px '';
+            text-decoration: none;
+            font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+            line-height: 50px;
+            border-radius: 30px;
+            background-image: linear-gradient(to left, #00CED1,#DB7093);
+            text-align: center;
+        }

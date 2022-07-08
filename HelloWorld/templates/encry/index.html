@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/3.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/4.css' %}">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="aaa">
+    {% if request.session.username %}
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-face-mask' ></i>
+                        <div class="logo_name">
+                            欢迎{{ request.session.username }}
+                        </div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="/encry/index">
+                        <i class='bx bx-home' ></i>
+                        <span class="links_name">
+                            首页
+                        </span>
+                    </a>
+                     <span class="tooltip">
+                            首页
+                     </span>
+                </li>
+                <li>
+                     <a href="/encry/encry">
+                        <i class='bx bxl-reddit'></i>
+                        <span class="links_name">
+                            云端加密服务
+                        </span>
+                    </a>
+                      <span class="tooltip">
+                            云端加密服务
+                     </span>
+                </li>
+                <li>
+                    <a href="/user/logout">
+                        <i class='bx bx-exit' ></i>
+                        <span class="links_name">
+                            退出登录
+                        </span>
+                    </a>
+                     <span class="tooltip">
+                            退出登录
+                     </span>
+                </li>
+            </ul>
+        </div>
+        <div class="home_content">
+                    <div class="text">Start To Use</div>
+        </div>
+    {% else %}
+        {% if request.COOKIES.username %}
+            <div class="sidebar">
+                <div class="logo_content">
+                    <div class="logo">
+                        <i class='bx bxs-face-mask' ></i>
+                            <div class="logo_name">
+                                 欢迎{{ request.session.username }}
+                            </div>
+                        </div>
+                        <i class='bx bx-menu' id="atn"></i>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                            <a href="/encry/index">
+                                <i class='bx bx-home' ></i>
+                                <span class="links_name">
+                                    首页
+                                </span>
+                            </a>
+                             <span class="tooltip">
+                                    首页
+                             </span>
+                        </li>
+                        <li>
+                             <a href="/encry/encry">
+                                <i class='bx bxl-reddit'></i>
+                                <span class="links_name">
+                                    云端加密服务
+                                </span>
+                            </a>
+                              <span class="tooltip">
+                                    云端加密服务
+                             </span>
+                        </li>
+                        <li>
+                            <a href="/user/logout">
+                                <i class='bx bx-exit' ></i>
+                                <span class="links_name">
+                                    退出登录
+                                </span>
+                            </a>
+                             <span class="tooltip">
+                                    退出登录
+                             </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="home_content">
+                    <div class="text">欢迎</div>
+                </div>
+
+
+            {% else %}
+            <div class="sss">
+                 <div class="a">
+                    <div class="b"></div>
+                    <div class="c">
+                        <div class="d">
+                            <h1>欢迎使用</h1>
+                            <h1>信安20-1 赵博</h1>
+                            <h2>数据云密码服务系统</h2>
+                            <a href="/user/login" class="f">登录</a>
+                            <a href="/user/register" class="g">注册</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        {% endif %}
+    {% endif %}
+
+<script>
+let btn =document.querySelector("#btn");
+let sidebar =document.querySelector(".sidebar");
+btn.onclick =function () {
+    sidebar.classList.toggle('active')
+}
+</script>
+    {% if messages %}
+        <script>
+            {% for msg in messages %}
+                alert('{{ msg.message }}')
+            {% endfor %}
+        </script>
+    {% endif %}
+</body>
+</html>
